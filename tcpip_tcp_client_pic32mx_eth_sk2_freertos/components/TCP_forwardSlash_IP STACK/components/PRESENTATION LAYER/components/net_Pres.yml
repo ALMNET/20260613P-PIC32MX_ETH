@@ -1,0 +1,55 @@
+configVersion: 1.0.0
+componentName: net_Pres
+coreVersion: 5.9.0
+device: PIC32MX795F512H
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: net_Pres
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: net
+  type: package
+  version: v3.11.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: PRESENTATION LAYER
+    children:
+    - children:
+      - attributes:
+          id: net_Pres
+          x: '20'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    NET_PRES_SUPPORT_DATAGRAM:
+      attributes:
+        id: NET_PRES_SUPPORT_DATAGRAM
+        label: Support Datagram Connections?
+      children:
+      - children:
+        - attributes:
+            id: net_Pres
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NET_PRES_SUPPORT_STREAM:
+      attributes:
+        id: NET_PRES_SUPPORT_STREAM
+        label: Support Stream Connections?
+      children:
+      - children:
+        - attributes:
+            id: net_Pres
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+  userData: {}

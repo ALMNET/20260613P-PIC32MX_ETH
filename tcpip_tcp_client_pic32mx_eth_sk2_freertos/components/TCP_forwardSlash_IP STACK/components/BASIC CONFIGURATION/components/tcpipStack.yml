@@ -1,0 +1,150 @@
+configVersion: 1.0.0
+componentName: tcpipStack
+coreVersion: 5.9.0
+device: PIC32MX795F512H
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: tcpipStack
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: net
+  type: package
+  version: v3.11.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: BASIC CONFIGURATION
+    children:
+    - children:
+      - attributes:
+          id: tcpipStack
+          x: '20'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    TCPIP_STACK_DRAM_SIZE:
+      attributes:
+        id: TCPIP_STACK_DRAM_SIZE
+        label: TCP/IP Stack Dynamic RAM Size
+      children:
+      - children:
+        - attributes:
+            value: '65536'
+          type: User
+        type: Values
+      type: Integer
+    TCPIP_STACK_HEAP_SIZE_RECOMMEND:
+      attributes:
+        id: TCPIP_STACK_HEAP_SIZE_RECOMMEND
+        label: TCP/IP Heap Size Estimate(in kilobytes)
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: '36'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TCPIP_STACK_INTERRUPT_EN_IDX0:
+      attributes:
+        id: TCPIP_STACK_INTERRUPT_EN_IDX0
+        label: Interrupt 0
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCPIP_STACK_INTMAC_INTERFACE_NUM:
+      attributes:
+        id: TCPIP_STACK_INTMAC_INTERFACE_NUM
+        label: Number of Internal MAC interfaces
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TCPIP_STACK_INT_MAC_IDX0:
+      attributes:
+        id: TCPIP_STACK_INT_MAC_IDX0
+        label: Internal MAC?
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCPIP_STACK_MAC_CLOCK:
+      attributes:
+        id: TCPIP_STACK_MAC_CLOCK
+        label: MAC Peripheral Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: '80000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TCPIP_STACK_MII_MODE_IDX0:
+      attributes:
+        id: TCPIP_STACK_MII_MODE_IDX0
+        label: PHY Interface
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: RMII
+          type: Dynamic
+        type: Values
+      type: String
+    TCPIP_STACK_NET_INTERFACE_NAME_IDX0:
+      attributes:
+        id: TCPIP_STACK_NET_INTERFACE_NAME_IDX0
+        label: Interface Name
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: ETHMAC
+          type: Dynamic
+        type: Values
+      type: String
+    TCPIP_STACK_NET_INTERFACE_NUM:
+      attributes:
+        id: TCPIP_STACK_NET_INTERFACE_NUM
+        label: Number of Network interfaces
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TCPIP_STACK_SYS_RANDOM_H2_ADAPTER:
+      attributes:
+        id: TCPIP_STACK_SYS_RANDOM_H2_ADAPTER
+        label: TCPIP_STACK_SYS_RANDOM_H2_ADAPTER
+      children:
+      - children:
+        - attributes:
+            id: tcpipStack
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+  userData: {}

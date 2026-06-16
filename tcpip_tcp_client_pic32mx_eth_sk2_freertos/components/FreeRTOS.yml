@@ -1,0 +1,58 @@
+configVersion: 1.0.0
+componentName: FreeRTOS
+coreVersion: 5.9.0
+device: PIC32MX795F512H
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: FreeRTOS
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS-FreeRTOS
+  type: package
+  version: v10.5.1
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.13.3
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: FreeRTOS
+          x: '219'
+          y: '36'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    FREERTOS_MEMORY_MANAGEMENT_CHOICE:
+      attributes:
+        id: FREERTOS_MEMORY_MANAGEMENT_CHOICE
+        label: Memory Management Type
+      children:
+      - children:
+        - attributes:
+            value: Heap_3
+          type: User
+        type: Values
+      type: Combo
+    FREERTOS_PERIPHERAL_CLOCK_HZ:
+      attributes:
+        id: FREERTOS_PERIPHERAL_CLOCK_HZ
+        label: Peripheral Clock Speed (Hz)
+      children:
+      - children:
+        - attributes:
+            id: FreeRTOS
+            value: '80000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+  userData: {}
