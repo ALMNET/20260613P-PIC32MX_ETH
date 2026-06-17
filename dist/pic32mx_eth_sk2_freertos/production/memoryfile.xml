@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/pic32mx_eth_sk2_freertos/production/20260613P-PIC32MX_ETH.X.X.production.elf">                 
+  <executable name="dist/pic32mx_eth_sk2_freertos/production/20260613P-PIC32MX_ETH.production.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
       <length>531968</length>                 
-      <used>263783</used>                     
-      <free>268185</free>                     
+      <used>263779</used>                     
+      <free>268189</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
